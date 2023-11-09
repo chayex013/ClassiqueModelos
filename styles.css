@@ -802,7 +802,7 @@ body{
     max-width: 1063px;
   }
 
-@media (max-width: 991px) {
+@media (max-width: 900px) {
   .menucontainer {
     padding: 20px;
   }
@@ -868,7 +868,9 @@ body{
   }
 
   .acercadenosotros {
-    padding: 30px;
+    
+    text-align: center;
+    padding: 20px;
   }
 
   .a-acercade {
@@ -907,28 +909,48 @@ body{
     flex-direction: column;
     margin-bottom: 10px;
   }
-
-  .pngs{
-    padding-right: 130px;
+  .contacto .ft {
     
-    
-
+    color: #fff; /* Texto blanco */
+    padding: 20px;
   }
 
-  .pngs h3{
-    margin-left: 2000px;
+  .enlace li {
+    display: block;
+    margin: 10px;
   }
 
-  .pngs a{
-    margin-top: 20px;
-    
+  .enlace li a {
+    color: #fff; /* Texto blanco para los enlaces en el footer */
+  }
+
+  .pngs {
+    text-align: center;
+  }
+
+  .ig, .face, .wpp {
+    margin: 10px;
+  }
+
+  .link .btn-3 {
+    background: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
   }
   .container{
     max-width: 991px;
     margin: 0 auto;
   }
-      
-  
+
+ /* img {
+    max-width: 100%; /* Imágenes se ajustan al ancho de la pantalla */
+ 
+
+  .galeria img{
+    min-width:1350 px ;
+  }
 }
   
 
