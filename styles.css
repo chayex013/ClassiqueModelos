@@ -13,7 +13,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vh;
+ 
 
 }
 
@@ -33,7 +33,6 @@ body{
 
   
 
-  
 
   .galery {
     background-color: black;
@@ -119,14 +118,7 @@ body{
   display: none;
 }
 
- /* main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 50px);
-    padding-top: 60px;
-  }*/
-  
+   
   .welcome-card {
     background-color: rgba(180, 162, 0, 0.301);
     background-size: cover;
@@ -212,10 +204,13 @@ body{
 
   .cursosmodelaje {
     background-color: #2d2f3a;
-    padding: 5px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     color: #ffffff;
     flex-grow: 1;    
+    min-height: 70vh;
             
   }
   .cursosmodelaje h2 {
@@ -665,14 +660,14 @@ body{
   
 
   .carta{
-    padding-left: 20px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width:69vh;
+    
   }
   .carta img{
-    max-width: 1063px;
+    max-width: 900px;
     object-fit: cover;
     display: block;
         
@@ -772,11 +767,20 @@ body{
   .lista-imagenes{
     display: flex;
     overflow-y: auto;
-    margin-top: 10px;
+    margin-top: 2px;
     max-width: 1063px;
   }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+
+  body{
+    height: 100%;
+  }
+
+  .inicio{
+    background-image: url(images/ph-233.jpg);
+    height: 500px;
+  }
   .menucontainer {
     padding: 20px;
   }
@@ -789,18 +793,32 @@ body{
     top: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(255, 230, 8, 0.466);
+    background-color: rgba(148, 133, 3, 0.671);
     display: none;
     
   }
   .navbar ul li {
-    width: 40%;
-    text-align: center;
+    width: 20%;
+    text-align: end;
+    
     
     
   }
+
+  .navbar ul li a{
+    color: #222222;
+      
+  }
+
+  
+
   #menu:checked ~ .navbar {
     display: initial;
+  }
+
+  .menu-icono{
+    display: flex;
+    
   }
 
   .header{
@@ -809,6 +827,7 @@ body{
 
   .welcome-card {
     padding-bottom: 1px;
+    padding-top: 1px;
     text-align: center;
     flex-direction: column;
   }
@@ -835,10 +854,30 @@ body{
 
   .group-services {
     flex-direction: column;
+    align-items: center;
   }
 
   .service {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    padding-left: 50px;
+    border-radius: 20px;
+  }
+
+  .service img{
+    max-width: 200px;
+    border-radius: 50%;
+  }
+
+  .service:hover{
+    
+    max-width: 800px;
+    opacity: 1;
+    filter: contrast(120%);
+
   }
 
   .acercadenosotros {
@@ -863,6 +902,10 @@ body{
   .acercadenosotros img{
     width: 50%;
     height: auto;
+  }
+
+  .slider-frame{
+    max-width: 500px;
   }
 
   .galeria{
@@ -920,40 +963,38 @@ body{
     text-align: center;
   }
   .container{
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
   }
 
- /* img {
-    max-width: 100%; /* Imágenes se ajustan al ancho de la pantalla */
  
 
   .galeria img{
     min-width:1350 px ;
   }
 
-  .cursosmodelaje{
-    display: flex;
-    flex-direction: column;
-    padding: 30px ;
-    max-width:200%;
-  }
+  
   
   .group-cursos{
     display: flex;
     flex-direction: column;
+    max-width: 900px;
+    align-items: center;
+    
+    
     
   }
 
   .curso {
-    max-width: 49%;
+    
     height: auto;
   }
 
-  .curso img{
-    padding-top: 25px;
+  .curso:hover{
+    width: 800px;
+  }
 
-}
+  
   .galery {
     height: 15vh;
   } 
@@ -989,6 +1030,7 @@ body{
   .imgs{
     display: flex;
     flex-direction:column ;
+    align-items: center;
   }
 
   .imgs img{
@@ -996,17 +1038,21 @@ body{
     height: auto;
   }
 
+  .imgs p {
+    margin-bottom: 10px;
+  }
+
   .album{
-    padding: 20px;
+    
   }
 
   .black-n-white{
-    max-width: 50%;
+    max-width: 900px;
     height: auto;
   }
 
-  .carta img{
-    max-width: 100%;
+  .carta{
+    max-width: 900px;
   }
 
   .cuerpo-carta {
@@ -1015,12 +1061,17 @@ body{
 
   .album-container{
     
-    min-height: 130vh;
+    max-width: 900px;
     display: flex;
     
     justify-content: center;
   }
 }  
+
+  
+
+
+
 
   
 
