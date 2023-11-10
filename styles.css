@@ -771,6 +771,9 @@ body{
     max-width: 1063px;
   }
 
+
+  /*tablet*/
+
 @media (max-width: 900px) {
 
   body{
@@ -798,16 +801,22 @@ body{
     
   }
   .navbar ul li {
-    width: 20%;
-    text-align: end;
+    width: 390px;
+    
+    
+    
     
     
     
   }
 
   .navbar ul li a{
-    color: #222222;
-      
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+   
   }
 
   
@@ -1016,7 +1025,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 50px;
+    
   }
 
   .a-acercade p{
@@ -1042,9 +1051,7 @@ body{
     margin-bottom: 10px;
   }
 
-  .album{
-    
-  }
+  
 
   .black-n-white{
     max-width: 900px;
@@ -1069,10 +1076,370 @@ body{
 }  
 
   
+/*celular*/
 
+@media (max-width: 600px) {
 
+  body{
+    height: 100%;
+  }
 
+  .inicio{
+    background-image: url(images/ph-233.jpg);
+    height: 200px;
+  }
+  .menucontainer {
+    padding: 2px;
+  }
+
+  .logo{
+    width: 120px;
+  }
+  .menucontainer label {
+    display: initial;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(148, 133, 3, 0.671);
+    display: none;
+    
+  }
+  .navbar ul li {
+    width: 50px;
+    text-align: end;
+    
+    
+    
+    
+  }
+
+  .navbar ul li a{
+    color: #222222;
+    font-size: 14px;
+    text-align: center;
+      
+  }
 
   
 
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
 
+  .menu-icono{
+    display: flex;
+    width: 15px;
+    
+  }
+
+  .header{
+    height:  60vh;
+  }
+
+  .welcome-card {
+    
+    text-align: center;
+    flex-direction: column;
+    width: 200px;
+    height: 55px;
+  }
+
+  .welcome-card h1 {
+    padding-bottom: 1px;
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .welcome-card p {
+    padding-bottom: 1px;
+    text-align: center;
+    flex-direction: column;
+    font-size: 11px;
+    
+  }
+
+  .services {
+    padding: 10px;
+  }
+
+  .txt-1 {
+    padding: 0px;
+    margin-bottom: 35px;
+  }
+
+  .group-services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    padding-left: 50px;
+    border-radius: 20px;
+  }
+
+  .service img{
+    max-width: 200px;
+    border-radius: 50%;
+  }
+
+  .service:hover{
+    
+    max-width: 400px;
+    opacity: 1;
+    filter: contrast(120%);
+
+  }
+
+  .acercadenosotros {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    justify-content: center;
+  }
+
+  .a-acercade {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  
+  
+  .acercadenosotros-txt-1 {
+    text-align: center;
+
+  }
+
+  .acercadenosotros img{
+    width: 50%;
+    height: auto;
+  }
+  /*hacer coincidir el width*/
+  .slider-frame{
+    width: 380px;
+  }
+
+  .slider-frame li{
+    width: 380px;
+    
+    
+  }
+
+  .galeria{
+    padding: 30px;
+  }
+
+  footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .ft.container{
+    text-align: center;
+    flex-direction: column;
+    
+  }
+  .enlace form {
+    align-items: center;
+  }
+
+  .link{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .contacto .ft {
+    
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+  }
+
+  .enlace li {
+    display: block;
+    margin: 10px;
+  }
+
+  .enlace li a {
+    color: #fff; /* Texto blanco para los enlaces en el footer */
+  }
+
+  .pngs {
+    text-align: center;
+    
+  }
+
+  
+
+  .ig, .face, .wpp {
+    margin: 10px;
+  }
+
+  .link .btn-3 {
+    background: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  .container{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+ 
+
+  .galeria img{
+    min-width:1350 px ;
+  }
+
+  
+  
+  .group-cursos{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+    
+    
+    
+  }
+
+  .curso {
+    width:350px;
+    height: auto;
+  }
+
+  .curso:hover{
+    width: 350px;
+  }
+
+  .curso img{
+    width: 180px;
+    height: 220px;
+    
+  }
+
+  .txt-2{
+    width:180px ;
+    height: 220px;
+  }
+
+  .txt-2 h2{
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .txt-2 h3 {
+    font-size: 12px;
+    margin: 5px;
+
+  }
+
+  .txt-2 p{
+    font-size: 10px;
+    margin: 6px;
+    padding: 0
+  }
+
+  
+  .galery {
+    height: 10vh;
+  } 
+  
+  .informacion{
+    padding: 20px;
+    
+  }
+
+  .a-acercade{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .a-acercade h2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+  }
+
+  .a-acercade p{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .imgs{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+  }
+
+  .imgs img{
+    width: 400px;
+    height: auto;
+  }
+
+  .imgs p {
+    margin-bottom: 10px;
+  }
+
+  .album{
+    padding-top:10px ;
+
+  }
+
+  .black-n-white{
+    max-width: 400px;
+    height: auto;
+  }
+
+  .carta{
+    max-width: 400px;
+  }
+
+  .carta img{
+    height: 420px;
+    width: 400px;
+  }
+
+  .cuerpo-carta {
+    height:   75px;
+    background: rgba(0, 0, 0, 0.87);
+  }
+
+  .cuerpo-carta h5{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+
+  }
+
+  .cuerpo-carta p{
+    font-size: 12px;
+    margin-top: 2px;
+    color: #7B7D8A;
+  }
+
+  .album-container{
+    
+    max-width: 900px;
+    display: flex;
+    
+    justify-content: center;
+  }
+}  
